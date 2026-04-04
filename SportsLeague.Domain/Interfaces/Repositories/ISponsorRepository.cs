@@ -6,7 +6,7 @@ namespace SportsLeague.Domain.Interfaces.Repositories
 {
     public interface ISponsorRepository:IGenericRepository<Sponsor>
     {
-        public Task<bool> ExistsByNameAsync(String name);
+        Task<bool> ExistsByNameAsync(String name);
         Task<TournamentSponsor> AddToTournamentAsync(TournamentSponsor tournamentSponsor);
         Task<IEnumerable<TournamentSponsor>> GetTournamentsBySponsorIdAsync(int sponsorId);
         Task<TournamentSponsor?> GetTournamentSponsorAsync(int sponsorId, int tournamentId);

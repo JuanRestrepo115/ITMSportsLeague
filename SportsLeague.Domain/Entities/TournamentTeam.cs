@@ -4,7 +4,6 @@
 public class TournamentTeam : AuditBase
 
 {
-
     public int TournamentId { get; set; }
 
     public int TeamId { get; set; }

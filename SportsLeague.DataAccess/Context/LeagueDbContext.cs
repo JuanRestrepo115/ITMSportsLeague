@@ -308,7 +308,7 @@ public class LeagueDbContext : DbContext
 
             entity.Property(ts => ts.ContractAmount)
                   .IsRequired()
-                  .HasColumnType("decimal(18,2)");  // Precisión estándar para dinero
+                  .HasColumnType("decimal(18,2)");  
 
             entity.Property(ts => ts.JoinedAt)
                   .IsRequired();
