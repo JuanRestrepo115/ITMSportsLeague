@@ -40,6 +40,14 @@ builder.Services.AddScoped<ITournamentSponsorRepository, TournamentSponsorReposi
 
 builder.Services.AddScoped<IMatchRepository, MatchRepository>();
 
+builder.Services.AddScoped<IStandingsService, StandingsService>();
+
+builder.Services.AddScoped<IMatchResultRepository, MatchResultRepository>();
+
+builder.Services.AddScoped<IGoalRepository, GoalRepository>();
+
+builder.Services.AddScoped<ICardRepository, CardRepository>();
+
 // ── Services ──
 
 builder.Services.AddScoped<ITeamService, TeamService>();
