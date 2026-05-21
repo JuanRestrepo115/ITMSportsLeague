@@ -12,8 +12,8 @@ namespace SportsLeague.Domain.Entities
         public DateTime JoinedAt { get; set; }
 
         // Navigation Properties
-        public Tournament Tournament { get; set; }
+        public Tournament Tournament { get; set; } = null!;
 
-        public Sponsor Sponsor { get; set; }
+        public Sponsor Sponsor { get; set; } = null!;
     }
 }
